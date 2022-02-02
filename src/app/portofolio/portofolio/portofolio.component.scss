@@ -85,6 +85,14 @@
     }
   }
 }
+@media (min-width: 320px) {
+  .portofolio-filter {
+    .search {
+      font-size: 8px;
+      width: 74%;
+    }
+  }
+}
 @media (min-width: 375px) {
   .portofolio-filter {
     .search {
