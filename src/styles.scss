@@ -1,0 +1,21 @@
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  // background-color: #000 !important;
+  // color: #bbb !important;
+}
+.modal-backdrop.show {
+  display: none !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: montserrat, "Helvetica Neue", sans-serif;
+}

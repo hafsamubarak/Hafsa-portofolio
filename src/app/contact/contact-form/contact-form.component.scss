@@ -1,0 +1,144 @@
+.contact {
+  padding-bottom: 100px;
+  .first {
+    width: 100%;
+    ul {
+      margin: 0;
+      list-style-type: none;
+      li {
+        width: 100%;
+        margin: 0 0 30px;
+        input {
+          border: 1px solid rgba(225, 225, 225, 0.2);
+          color: #fff;
+          width: 100%;
+          background-color: transparent;
+          font-style: italic;
+          letter-spacing: 1.4px;
+          padding: 10px;
+          height: 44px;
+          font-weight: 800;
+        }
+        textarea {
+          width: 100%;
+          border: 1px solid rgba(225, 225, 225, 0.2);
+          color: #fff;
+          background-color: transparent;
+          letter-spacing: 1.4px;
+          padding: 10px;
+          font-weight: 800;
+        }
+        button {
+          width: 100%;
+          background-color: #fff;
+          color: #000;
+          padding: 9px 40px 14px;
+          font-style: italic;
+          border: none;
+          // span {
+
+          //   display: inline-block;
+          //   position: relative;
+          //   transition: 0.5s;
+          // }
+          // span::after {
+          //   content: "\00bb";
+          //   position: absolute;
+          //   opacity: 0;
+          //   top: 0;
+          //   right: -20px;
+          //   transition: 0.5s;
+          //   font-size: 18px;
+          // }
+        }
+        button:hover {
+          padding-right: 25px;
+          transition: 0.5s;
+        }
+        // button:hover span::after {
+        //   opacity: 1;
+        //   right: 0;
+        // }
+      }
+    }
+  }
+}
+.modal-dialog {
+  max-width: 600px;
+  .modal-content {
+    overflow: hidden;
+    border: none;
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    .modal-header {
+      background: linear-gradient(45deg, #915eff 0%, #ff8e59 100%);
+      height: 230px;
+      position: relative;
+      padding: 0;
+      border: none;
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+        color: #fff !important;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        line-height: 1;
+        text-shadow: 0 1px 0 #fff;
+        opacity: 0.5;
+      }
+    }
+    .modal-body {
+      border: none;
+      margin-top: -180px;
+      z-index: 2;
+      overflow: hidden;
+      h2 {
+        font-weight: 700;
+        color: #fff;
+      }
+      .icon {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        font-size: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+      h4 {
+        color: #212529;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.ftco-degree-bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  overflow: visible;
+  width: 50%;
+  height: 60px;
+  z-index: 1;
+  transform: skewY(10deg);
+  background-color: #fff;
+}
+.ftco-degree-bg:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  overflow: visible;
+  width: 50%;
+  height: 60px;
+  z-index: 1;
+  transform: skewY(-10deg);
+  background-color: #fff;
+}

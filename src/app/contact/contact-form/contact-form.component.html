@@ -1,0 +1,66 @@
+  <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()" >
+    <div class="first">
+      <ul>
+        <li>
+          <input id="name" name="name" placeholder="Name" #localForm1="ngForm"
+            [formControl]="name"
+            required
+            formControlName="name"
+            [class.is-invalid]="localForm1.touched && form.get('name')?.invalid"
+            >
+          <div class="invalid-feedback" *ngIf="localForm1.touched && form.get('name')?.invalid">Name is Required!</div>
+          <div class="invalid-feedback" *ngIf="form.get('name')?.errors">
+            <sup>*</sup>No special charcter allowed
+          </div>
+        </li>
+        <li>
+        <input id="email" name="email" type="email" value="" #localForm2="ngForm"
+        [formControl]="email"
+        required
+        placeholder="Email"
+        formControlName="email"
+        [class.is-invalid]="localForm2.touched && form.get('email')?.invalid"
+        >
+        <div class="invalid-feedback">Email is Required!</div>
+        </li>
+        <li>
+        <textarea id="message" name="message" rows="10" #localForm3="ngForm"
+        [formControl]="message"
+        placeholder="Message"
+        required
+        formControlName="message"
+        [class.is-invalid]="localForm3.touched && form.get('message')?.invalid"
+        ></textarea>
+        <div class="invalid-feedback">Message is Required!</div>
+        <div class="invalid-feedback" *ngIf="form.get('message')?.errors">
+          <sup>*</sup>No special charcter allowed
+        </div>
+      </li>
+      <li class="button">
+        <button [disabled]="form.invalid" class="submit" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Message</button>
+      </li>
+      </ul>
+    </div>
+        <!-- <input [formControl]="honeypot" class="hidden" type="text"> -->
+      <!-- <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+        <span>{{responseMessage}}</span>
+      </div> -->
+
+    </form>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header ftco-degree-bg">
+            <button type="button" class="btn-close close d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body pt-md-0 pb-md-5 text-center" id="model">
+            <h2>We've Received Your Message!</h2>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <img src="../../../assets/images/email.svg" class="img-fluid">
+            </div>
+            <h4 class="mb-2">We'll Get Back to You Soon!</h4>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,33 @@
+<div class="rightPart">
+  <div class="rightPartInner">
+    <div id="portofolio">
+      <div class="container">
+        <div class="portofolio">
+          <div class="title">
+            <div class="title_flex d-flex">
+              <div class="left">
+                <span>Portofolio</span>
+                <h3>Creative Portofolio</h3>
+              </div>
+              <div class="portofolio-filter">
+                <input type="text" class="form-control search" placeholder="Type:Angular,React or JavaScript" [(ngModel)]="name" (input)="search()">
+              </div>
+            </div>
+          </div>
+            <div class="list_wrapper ">
+              <ul class="portofolio_list " style="position: relative;">
+                <li *ngFor="let pro of projects">
+                  <div class="inner">
+                  <a href="{{pro.link}}" target="_blank" title="{{pro.name}}">
+                  <img src="{{pro.img}}">
+                </a>
+              </div>
+                </li>
+
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
