@@ -10,7 +10,8 @@ export class ProjectsService {
     {id:2,name:"CliniDo React Admin-dashboard ",img:"../../assets/images/p2.PNG",link:"https://clinido-dashboard.herokuapp.com/"},
     {id:3,name:"Movie React App",img:"../../assets/images/p3.jpg",link:"https://movie-app-with-react-js.herokuapp.com/"},
     {id:4,name:"Voice Recognition vanilla JavaScript App",img:"../../assets/images/p4.jpg",link:"https://hafsamubarak.github.io/Voice-Recognition-with-vanilla-JavaScript/"},
-    {id:5,name:"GraphQL with Angular, Book store App",img:"../../assets/images/p5.png",link:"https://github.com/hafsamubarak/GraphQL-using-Angular"}
+    {id:5,name:"GraphQL with Angular, Book store App",img:"../../assets/images/p5.png",link:"https://github.com/hafsamubarak/GraphQL-using-Angular"},
+    {id:6,name:"Memory Game with Vanilla JavaScript",img:"../../assets/images/p6.jpg",link:"https://hafsamubarak.github.io/Simple-Memory-Game/"}
   ]
   AllProjects(){
     return [...this.projects];
