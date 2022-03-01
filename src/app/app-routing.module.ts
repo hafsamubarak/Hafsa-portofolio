@@ -9,7 +9,7 @@ import { PortofolioComponent } from './portofolio/portofolio/portofolio.componen
 const routes: Routes = [
   {path:"",component:RightSideComponent},
   {path:"about",component:AboutComponent},
-  {path:"portofolio",component:PortofolioComponent},
+  {path:"portfolio",component:PortofolioComponent},
   {path:"contact",component:ContactComponent},
   {path:"**",component:NotFoundComponent}
 ];
