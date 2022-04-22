@@ -44,13 +44,13 @@ export class ProjectsService {
     },
     {
       id: 7,
-      name: 'Todo App-WEBW',
+      name: 'Angular Todo App-WEBW',
       img: '../../assets/images/p77.jpg',
       link: 'https://webw-crud-app.firebaseapp.com/',
     },
     {
       id: 8,
-      name: 'UI/UX Design-WEBW',
+      name: 'UI/UX Design-WEBW JavaScript',
       img: '../../assets/images/p8.png',
       link: 'https://hafsamubarak.github.io/webw-ui-ux/',
     },
