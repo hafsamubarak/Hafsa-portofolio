@@ -13,6 +13,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          dropdownToggle
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,22 +23,54 @@
           style="text-align: center"
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" routerLink=""
+            <li
+              class="nav-item"
+              data-target="#sidenav-collapse-main"
+              data-
+              toggle="collapse"
+            >
+              <a
+                class="nav-link active"
+                aria-current="page"
+                (click)="ToggleNavBar()"
+                routerLink="/"
                 >Home</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="about">About</a>
+            <li
+              class="nav-item"
+              data-target="#sidenav-collapse-main"
+              data-
+              toggle="collapse"
+            >
+              <a class="nav-link" (click)="ToggleNavBar()" routerLink="/about"
+                >About</a
+              >
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" routerLink="portfolio">Portfolio</a>
+            <li
+              class="nav-item dropdown"
+              data-target="#sidenav-collapse-main"
+              data-
+              toggle="collapse"
+            >
+              <a
+                class="nav-link"
+                (click)="ToggleNavBar()"
+                routerLink="/portfolio"
+                >Portfolio</a
+              >
             </li>
-            <li class="nav-item dropdown">
+            <li
+              class="nav-item dropdown"
+              data-target="#sidenav-collapse-main"
+              data-
+              toggle="collapse"
+            >
               <a
                 class="nav-link last"
-                routerLink="contact"
+                routerLink="/contact"
                 style="border-bottom: none"
+                (click)="ToggleNavBar()"
                 >Contact</a
               >
             </li>
