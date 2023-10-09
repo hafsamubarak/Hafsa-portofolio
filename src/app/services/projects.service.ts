@@ -28,7 +28,7 @@ export class ProjectsService {
       id: 4,
       name: 'Amazon clone with React',
       img: '../../assets/images/p4.jpg',
-      link: 'https://hafsamubarak.github.io/Voice-Recognition-with-vanilla-JavaScript/',
+      link: 'https://next-shopping-task.vercel.app/',
     },
     {
       id: 5,
