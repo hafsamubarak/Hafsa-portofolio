@@ -42,45 +42,88 @@
             }
           }
         }
-        .list_wrapper {
-          width: 100%;
-          height: auto;
-          padding-bottom: 100px;
-          .portofolio_list {
-            list-style-type: none;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            margin: 0 0 0 -50px;
-            li {
-              text-align: center;
-              font-size: 25px;
+        .portofolio_list {
+          list-style-type: none;
+          color: #fff;
+          display: grid;
+          grid-template-columns: repeat(
+            auto-fit,
+            minmax(300px, 1fr)
+          ); /* create a grid with columns that have a minimum width of 300px and expand to fill the available space */
+          grid-gap: 20px; /* add some spacing between the items */
+          margin: 0 0 0 -50px;
+          padding-bottom: 40px;
+          li {
+            box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.3);
+            text-align: center;
+            font-size: 25px;
+            width: 100%;
+            font-style: italic;
+            // padding-left: 50px;
+            height: fit-content;
+            .inner {
+              overflow: hidden;
+              position: relative;
               width: 100%;
-              font-style: italic;
-              padding-left: 50px;
-              // height: fit-content;
-              // margin: 0 0 0 50px;
-              .inner {
-                overflow: hidden;
-                position: relative;
-                width: 100%;
-                height: auto;
-                a {
-                  img {
-                    width: 100%;
-                    margin-top: 30px;
-                    transition: all 0.3s ease;
-                  }
-                }
-                img:hover {
-                  transform: rotate(0deg) scale(1.1);
+              height: auto;
+              a {
+                img {
+                  width: 100%;
+                  // margin-top: 30px;
                   transition: all 0.3s ease;
+                  height: 150px;
                 }
+              }
+              img:hover {
+                transform: rotate(0deg) scale(1.1);
+                transition: all 0.3s ease;
               }
             }
           }
         }
+        // .list_wrapper {
+        //   width: 100%;
+        //   height: auto;
+        //   padding-bottom: 100px;
+        //   .portofolio_list {
+        //     list-style-type: none;
+        //     color: #fff;
+        //     display: flex;
+        //     flex-direction: column;
+        //     flex-wrap: wrap;
+        //     margin: 0 0 0 -50px;
+        //     li {
+        //       text-align: center;
+        //       font-size: 25px;
+        //       width: 100%;
+        //       font-style: italic;
+        //       padding-left: 50px;
+        //       height: 250px; /* set a fixed height */
+        //       overflow: hidden;
+
+        //       // height: fit-content;
+        //       // margin: 0 0 0 50px;
+        //       .inner {
+        //         overflow: hidden;
+        //         position: relative;
+        //         width: 100%;
+        //         height: auto;
+        //         a {
+        //           img {
+        //             width: 100%;
+        //             margin-top: 30px;
+        //             transition: all 0.3s ease;
+        //             object-fit: cover; /* ensure the image fills the container */
+        //           }
+        //         }
+        //         img:hover {
+        //           transform: rotate(0deg) scale(1.1);
+        //           transition: all 0.3s ease;
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
       }
     }
   }

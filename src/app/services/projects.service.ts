@@ -14,15 +14,15 @@ export class ProjectsService {
     },
     {
       id: 2,
-      name: 'CliniDo React Admin-dashboard ',
-      img: '../../assets/images/p2.PNG',
-      link: 'https://clinido-dashboard.herokuapp.com/',
+      name: 'Airbnb-clone React NextJS  ',
+      img: '../../assets/images/airbnb.png',
+      link: 'https://airbnb-clone-phi-eight.vercel.app/',
     },
     {
       id: 3,
       name: 'Movie React App',
       img: '../../assets/images/p3.jpg',
-      link: 'https://movie-app-with-react-js.herokuapp.com/',
+      link: 'https://next-movies-zeta.vercel.app/?category=Popular&page=1',
     },
     {
       id: 4,
@@ -50,6 +50,12 @@ export class ProjectsService {
     },
     {
       id: 8,
+      name: 'UI/UX Educational website',
+      img: '../../assets/images/edu.jpg',
+      link: 'https://edu-ha.vercel.app/',
+    },
+    {
+      id: 9,
       name: 'UI/UX Design-WEBW JavaScript',
       img: '../../assets/images/p8.png',
       link: 'https://hafsamubarak.github.io/webw-ui-ux/',
