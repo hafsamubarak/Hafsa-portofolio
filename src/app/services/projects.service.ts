@@ -26,7 +26,7 @@ export class ProjectsService {
     },
     {
       id: 4,
-      name: 'Voice Recognition vanilla JavaScript App',
+      name: 'Amazon clone with React',
       img: '../../assets/images/p4.jpg',
       link: 'https://hafsamubarak.github.io/Voice-Recognition-with-vanilla-JavaScript/',
     },
